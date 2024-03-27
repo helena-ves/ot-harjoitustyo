@@ -7,12 +7,12 @@
     Pelilauta "1" -- "40" Ruutu
     Ruutu "1" -- "1" Ruutu : seuraava
     Ruutu "1" -- "0..8" Pelinappula
-    Ruutu <|-- Aloitusruutu
-    Ruutu <|-- Vankila
-    Ruutu <|-- Sattuma_ja_yhteismaa
-    Ruutu <|-- Asemat_ja_laitokset
-    Ruutu <|-- Normaalit_kadut
-    Sattuma_ja_yhteismaa <|-- Kortti
+    Ruutu "1" <|-- "1" Aloitusruutu
+    Ruutu "1" <|-- "*" Vankila
+    Ruutu "1" <|-- "*" Sattuma_ja_yhteismaa
+    Ruutu "1" <|-- "*" Asemat_ja_laitokset
+    Ruutu "1" <|-- "*" Normaalit_kadut
+    Sattuma_ja_yhteismaa "*" -- "*" Kortti
     Hotelli "1" -- "1" Normaalit_kadut
     Rakennus "0..4" -- "1" Normaalit_kadut
     Pelinappula "1" -- "1" Pelaaja
@@ -38,10 +38,12 @@
     	+Pelaaja omistaja
     	+Hotelli hotelli
     	+Rakennus rakennus
+    	+String nimi
     }
     class Pelaaja{
     	+Int saldo
     }
+
 
 ```
 
