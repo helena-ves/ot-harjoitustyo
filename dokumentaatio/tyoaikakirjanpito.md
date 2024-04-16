@@ -3,3 +3,8 @@ Työaikakirjanpito
 
 26.3: 2h, harjoitustyön suunnittelua, materiaaleihin perehtymistä, vaatimusmäärittely
 9.4: 2 + 2h, uusien luokkien luomista, rakenteen hahmottelemista, yksittäinen testi
+14.4: 2h, mallisovellukseen perehtymistä
+15.4: 2h, toiminnallisuuksien lisäystä
+16.4: 6h, toiminnallisuuksia, debugausta, testien kirjoittamista, dokumentaation tekoa.
+
+Yht: 16h

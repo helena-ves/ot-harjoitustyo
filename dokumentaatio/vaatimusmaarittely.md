@@ -12,14 +12,14 @@ Käyttöliittymässä on joitakin valmiita syötteitä sisältävä sudoku-ruudu
 
 ## Toiminnallisuus
 
-- Sovellus esittää osittain täytetyn sudoku-ruudukon pelaajalle.
-- Pelaaja voi syöttää ruudukon soluihin numeroita
-- Käyttöliittymässä on tarkasta-toiminto, jonka avulla syötteiden oikeellisuuden voi tarkastaa
-  - Sovellus tarkastaa rivien oikeellisuuden
-  - Sovellus tarkastaa sarakkeiden oikeellisuuden
+- Sovellus esittää osittain täytetyn sudoku-ruudukon pelaajalle. TEHTY
+- Pelaaja voi syöttää ruudukon soluihin numeroita TEHTY
+- Käyttöliittymässä on tarkasta-toiminto, jonka avulla syötteiden oikeellisuuden voi tarkastaa TEHTY
+  - Sovellus tarkastaa rivien oikeellisuuden TEHTY
+  - Sovellus tarkastaa sarakkeiden oikeellisuuden TEHTY
   - Sovellus tarkastaa ruutujen oikeellisuuden
   - Väärin täytetyt ruudut, sarakkeet tai rivit merkitään
-- Sovelluksessa on toiminto, josta voi ladata uuden helpon, keskivaikean tai vaikean ruudukon
+- Sovelluksessa on toiminto, josta voi ladata uuden helpon, keskivaikean tai vaikean ruudukon TEHTY
  - Uuden ruudukon pohja voidaan hakea tietokannasta
 - Sovelluksessa on toiminto, josta voi tyhjentää nykyisen ruudukon ja aloittaa alusta
 

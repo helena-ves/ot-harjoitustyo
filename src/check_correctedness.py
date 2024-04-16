@@ -11,7 +11,17 @@ def rows(matrix: list):
     return True
 
 def columns(matrix: list):
+    column = 0
+    while column < 9:
+        numbers = []
+        for row in matrix:
+            if numbers.count(row[column]) > 0:
+                return False
+            if row[column] > 0:
+                numbers.append(row[column])
+        column += 1
     return True
 
 def squares(matrix: list):
-    return True
+    if matrix:
+        return True
