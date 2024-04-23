@@ -26,3 +26,6 @@ poetry run invoke coverage-report
 
 [Changelog](https://github.com/helena-ves/ot-harjoitustyo/blob/main/dokumentaatio/changelog.md)
 
+## Release
+
+[Release](https://github.com/helena-ves/ot-harjoitustyo/releases)
