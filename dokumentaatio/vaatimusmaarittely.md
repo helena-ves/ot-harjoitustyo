@@ -17,8 +17,8 @@ Käyttöliittymässä on joitakin valmiita syötteitä sisältävä sudoku-ruudu
 - Käyttöliittymässä on tarkasta-toiminto, jonka avulla syötteiden oikeellisuuden voi tarkastaa TEHTY
   - Sovellus tarkastaa rivien oikeellisuuden TEHTY
   - Sovellus tarkastaa sarakkeiden oikeellisuuden TEHTY
-  - Sovellus tarkastaa ruutujen oikeellisuuden
-  - Väärin täytetyt ruudut, sarakkeet tai rivit merkitään
+  - Sovellus tarkastaa ruutujen oikeellisuuden TEHTY
+  - Väärin täytetyt ruudut, sarakkeet tai rivit merkitään TEHTY
 - Sovelluksessa on toiminto, josta voi ladata uuden helpon, keskivaikean tai vaikean ruudukon TEHTY
  - Uuden ruudukon pohja voidaan hakea tietokannasta
 - Sovelluksessa on toiminto, josta voi tyhjentää nykyisen ruudukon ja aloittaa alusta

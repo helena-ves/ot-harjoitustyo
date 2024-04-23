@@ -33,6 +33,12 @@ class testSudokuMatrix(unittest.TestCase):
         for row in self.hard:
             self.assertEqual(helper_row_contains_same_numbers(row), False)
 
+    def test_if_insert_number_updates_the_matrix(self):
+        easy_updated = SudokuMatrix('easy').insert_number(5, (0, 0))
+        medium_updated = SudokuMatrix('medium').insert_number(5, (0, 0))
+        hard_updated = SudokuMatrix('hard').insert_number(5, (0, 0))
+        
+
 
 
 def helper_row_contains_same_numbers(row):

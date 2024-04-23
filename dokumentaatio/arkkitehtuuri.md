@@ -20,4 +20,12 @@
           + String path
           create_matrix()
       }
+
+
+sequenceDiagram
+    SudokuApp->>SudokuMatrix: set_matrix()
+    SudokuMatrix->>FileService: create_matrix()
+    SudokuApp->>SudokuMatrix: insert_number()
+    SudokuApp->>check_correctedness: check_progress()
+    
 ```

@@ -1,14 +1,11 @@
 
 def rows(matrix: list):
-    items = []
-    for row in matrix:
+    for index, row in enumerate(matrix):
         for num in row:
-            if num not in items and num > 0:
-                items.append(num)
-    for item in items:
-        if items.count(item) > 1:
-            return False
-    return True
+            if num > 0:
+                if row.count(num) > 1:
+                    return (False, index)
+    return (True, -1)
 
 def columns(matrix: list):
     column = 0
@@ -16,12 +13,29 @@ def columns(matrix: list):
         numbers = []
         for row in matrix:
             if numbers.count(row[column]) > 0:
-                return False
+                return (False, column)
             if row[column] > 0:
                 numbers.append(row[column])
         column += 1
-    return True
+    return (True, -1)
 
 def squares(matrix: list):
-    if matrix:
-        return True
+    starting_points = [(0, 0), (0, 3), (0, 6), (3, 0), (3, 3), (3, 6), (6, 0), (6, 3), (6, 6)]
+    numbers_in_squares = []
+    for point in starting_points:
+        i = 0
+        numbers = []
+        point_x = point[0]
+        point_y = point[1]
+        while i < 3:
+            j = 0
+            while j < 3:
+                numbers.append(matrix[point_x + i][point_y + j])
+                j += 1
+            i += 1
+        numbers_in_squares.append(numbers)
+    for index, square in enumerate(numbers_in_squares):
+        for n in square:
+            if square.count(n) > 1 and n!= -1:
+                return (False, starting_points[index])
+    return (True, -1)

@@ -6,5 +6,7 @@ Työaikakirjanpito
 14.4: 2h, mallisovellukseen perehtymistä
 15.4: 2h, toiminnallisuuksien lisäystä
 16.4: 6h, toiminnallisuuksia, debugausta, testien kirjoittamista, dokumentaation tekoa.
+21.4: 2h, toimintalogiikan laajennus
+23.4: 4h, toimintalogiikan laajennusta, dokumentaation parannus, käyttöliittymän korjauksia.
 
-Yht: 16h
+Yht: 22h

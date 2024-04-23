@@ -32,6 +32,9 @@ class SudokuMatrix:
             sudokustring += "\n"
         return sudokustring
 
+    def __getitem__(self, x: int):
+        return self.matrix[x]
+
     def __iter__(self):
         self.n = 0
         return self
