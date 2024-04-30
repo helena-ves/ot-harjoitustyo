@@ -1,5 +1,11 @@
 
 def rows(matrix: list):
+    """Checks the correctedness of rows in the matrix
+    Args:
+        matrix (list): the current state of the matrix
+    Returns:
+        _tuple: contains Boolean value and index number of possible error
+    """
     for index, row in enumerate(matrix):
         for num in row:
             if num > 0:
@@ -8,6 +14,12 @@ def rows(matrix: list):
     return (True, -1)
 
 def columns(matrix: list):
+    """Checks the correctedness of columns in the matrix
+    Args:
+        matrix (list): the current state of the matrix
+    Returns:
+        tuple: contains Boolean value and index of possible error
+    """
     column = 0
     while column < 9:
         numbers = []
@@ -20,6 +32,12 @@ def columns(matrix: list):
     return (True, -1)
 
 def squares(matrix: list):
+    """Checks the correctedness of squares in the matrix
+    Args:
+        matrix (list): the current state of the matrix
+    Returns:
+        tuple: contains Boolean value and index of possible error
+    """
     starting_points = [(0, 0), (0, 3), (0, 6), (3, 0), (3, 3), (3, 6), (6, 0), (6, 3), (6, 6)]
     numbers_in_squares = []
     for point in starting_points:

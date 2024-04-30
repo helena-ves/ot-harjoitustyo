@@ -1,15 +1,30 @@
-import sudoku_matrix
-import check_correctedness
+import services.sudoku_matrix as sudoku_matrix
+import services.check_correctedness as check_correctedness
 
 class SudokuApp:
+    """Class containing the user interface of the app
+        Attributes:
+        sudoku: contains the sudoku matrix
+        level: level of difficulty chosen by the player
+    """
     def __init__(self):
+        """Creates a placeholder for sudoku matrix and level of difficulty
+        """
         self.sudoku = None
         self.level = ''
 
     def set_matrix(self):
+        """Downloads the matrix from SudokuMatrix and sets it to the placeholder
+        """
         self.sudoku = sudoku_matrix.SudokuMatrix(self.level)
 
     def check_progress(self):
+        """Check the correctedness of input the player has entered.
+            Args: 
+            rows: tuple containing Boolean value and coordinates of a possible error
+            columns: tuple containing Boolean value and coordinates of a possible error
+            squares: tuple containins Boolean value and coordinates of a possible error
+        """
         rows = check_correctedness.rows(self.sudoku)
         columns = check_correctedness.columns(self.sudoku)
         squares = check_correctedness.squares(self.sudoku)
@@ -26,6 +41,10 @@ class SudokuApp:
         print()
 
     def start(self):
+        """Starts the user interface of the game and prints out output for the user
+        Args:
+        command: str input by the user
+        """
         print('Welcome to play sudoku!')
         while True:
             print('X - quit')

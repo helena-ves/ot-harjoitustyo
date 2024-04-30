@@ -1,6 +1,6 @@
 import unittest
-from sudoku_matrix import SudokuMatrix
-from check_correctedness import rows, columns, squares
+from services.sudoku_matrix import SudokuMatrix
+from services.check_correctedness import rows, columns, squares
 
 class testSudokuMatrix(unittest.TestCase):
     def setUp(self):

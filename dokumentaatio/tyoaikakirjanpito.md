@@ -8,5 +8,6 @@ Työaikakirjanpito
 16.4: 6h, toiminnallisuuksia, debugausta, testien kirjoittamista, dokumentaation tekoa.
 21.4: 2h, toimintalogiikan laajennus
 23.4: 4h, toimintalogiikan laajennusta, dokumentaation parannus, käyttöliittymän korjauksia.
+30.4: 6h, tallennusmuodon vaihto tekstitiedostosta tietokantaan, tietokannan luominen ja ruudukoiden haku tietokannasta. Pakkausrakenteen muutos.
 
-Yht: 22h
+Yht: 28h

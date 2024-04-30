@@ -20,7 +20,7 @@ Käyttöliittymässä on joitakin valmiita syötteitä sisältävä sudoku-ruudu
   - Sovellus tarkastaa ruutujen oikeellisuuden TEHTY
   - Väärin täytetyt ruudut, sarakkeet tai rivit merkitään TEHTY
 - Sovelluksessa on toiminto, josta voi ladata uuden helpon, keskivaikean tai vaikean ruudukon TEHTY
- - Uuden ruudukon pohja voidaan hakea tietokannasta
+ - Uuden ruudukon pohja voidaan hakea tietokannasta TEHTY
 - Sovelluksessa on toiminto, josta voi tyhjentää nykyisen ruudukon ja aloittaa alusta
 
 

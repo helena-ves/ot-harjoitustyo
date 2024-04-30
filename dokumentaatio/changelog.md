@@ -9,3 +9,7 @@
 # Viikko 5:
 -Parannettu hieman käyttöliittymää, tehty oikeellisuuden tarkistaminen loppuun ja lisätty tieto virheellisen syötteen sijainnista.
 -Korjattu rikkoutuneet testit, tehty pari lisää.
+
+# Viikko 6:
+-Muutettu sudokujen tallennusmuoto tiedostosta tietokantaan. Lisätty muutama ruudukkopohja joista tietokantahaun alussa arvotaan tason mukainen vaihtoehto.
+- Muutettu pakkausrakennetta selkeämmäksi

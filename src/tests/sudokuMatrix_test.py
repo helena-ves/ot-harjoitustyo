@@ -1,5 +1,5 @@
 import unittest
-from sudoku_matrix import SudokuMatrix
+from services.sudoku_matrix import SudokuMatrix
 
 class testSudokuMatrix(unittest.TestCase):
     def setUp(self):
