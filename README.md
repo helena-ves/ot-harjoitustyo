@@ -61,4 +61,4 @@ poetry run invoke coverage-report
 
 ## Release
 
-[Release](https://github.com/helena-ves/ot-harjoitustyo/releases)
+[Latest release: Loppupalautus](https://github.com/helena-ves/ot-harjoitustyo/releases/tag/loppupalautus)
