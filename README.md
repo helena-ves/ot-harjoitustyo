@@ -41,6 +41,8 @@ päättyy, kun jokainen ruudukon ruutu on täytetty oikein.
 
 [Arkkitehtuuri](https://github.com/helena-ves/ot-harjoitustyo/blob/main/dokumentaatio/arkkitehtuuri.md)
 
+[Testausdokumentti](https://github.com/helena-ves/ot-harjoitustyo/blob/main/dokumentaatio/testausdokumentti.md)
+
 [Työaikakirjanpito](https://github.com/helena-ves/ot-harjoitustyo/blob/main/dokumentaatio/tyoaikakirjanpito.md)
 
 [Changelog](https://github.com/helena-ves/ot-harjoitustyo/blob/main/dokumentaatio/changelog.md)
