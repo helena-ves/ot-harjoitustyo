@@ -4,27 +4,27 @@
 
 ## Sovelluksen tarkoitus
 
-Sovellus on sudoku-peli, jossa pelaaja voi syöttää numeroita sudoku-ruudukkoon ja tarkastaa, onko peliruudukko täytetty oikein. Pelejä on eri vaikeusasteissa, ja pelaaja voi valita haluamansa tason. Pelaaja voi myös aloittaa pelin alusta uudella ruudukolla.
+Sovellus on sudoku-peli, jossa pelaaja voi syöttää numeroita sudoku-ruudukkoon ja tarkastaa, onko peliruudukko täytetty oikein. Pelejä on eri vaikeusasteissa, ja pelaaja voi valita haluamansa tason. Pelin alussa pelaana syöttää nimensä, ja peli mittaa ruudukon täyttöön käytettävää aikaa ja tallentaa pelaajan pelaamat pelit.
 
 ## Käyttöliittymä
 
-Käyttöliittymässä on joitakin valmiita syötteitä sisältävä sudoku-ruudukko, jonka ruutuihin pelaaja voi syöttää valitsemansa numeron. Käyttöliittymässä on myös toiminnot uudelle vaikealle pelille, uudelle helpolle pelille ja uudelle keskivaikealle pelille. Lisäksi käyttäjä voi tarkastaa syötteiden oikeellisuuden painamalla nappia.
+Graafisessa käyttöliittymässä on esinäkymä, jossa pelaaja voi syöttää nimensä ja valita ruuduko vaikeustason. Valinnan jälkeen siirrytään varsinaiseen peliruudukkoon. Varsinaisessa pelinäkymässä on joitakin valmiita syötteitä omaava sudoku-ruudukko, johon käyttäjä voi syöttää numeroita. Syötteiden oikeellisuuden voi tarkastaa painamalla tarkastus-nappulaa. Mikäli koko ruudukko on täytetty ja kaikki syötteet ovat oikein, tallentaa tarkastus-nappi ruudukon täyttöön menneen ajan pelaajan tietojen kanssa.
+
 
 ## Toiminnallisuus
 
-- Sovellus esittää osittain täytetyn sudoku-ruudukon pelaajalle. TEHTY
+- Sovellus esittää esinäkymässä kentän, johon pelaajan nimi syötetään. TEHTY
+- Sovellus esittää esinäkymässä painikkeet, josta voi valita pelin vaikeustason. TEHTY
+- Pelinäkymässä sovellus esittää osittain täytetyn sudoku-ruudukon pelaajalle. TEHTY
 - Pelaaja voi syöttää ruudukon soluihin numeroita TEHTY
+- Pelaaja voi poistaa syöttämänsä numeron. TEHTY
+- Pelaaja ei voi poistaa ruudukossa valmiina ollutta numeroa. TEHTY
 - Käyttöliittymässä on tarkasta-toiminto, jonka avulla syötteiden oikeellisuuden voi tarkastaa TEHTY
   - Sovellus tarkastaa rivien oikeellisuuden TEHTY
   - Sovellus tarkastaa sarakkeiden oikeellisuuden TEHTY
   - Sovellus tarkastaa ruutujen oikeellisuuden TEHTY
-  - Väärin täytetyt ruudut, sarakkeet tai rivit merkitään TEHTY
-- Sovelluksessa on toiminto, josta voi ladata uuden helpon, keskivaikean tai vaikean ruudukon TEHTY
- - Uuden ruudukon pohja voidaan hakea tietokannasta TEHTY
-- Sovelluksessa on toiminto, josta voi tyhjentää nykyisen ruudukon ja aloittaa alusta
-
-
-## Jos aikaa jää
-
-Sovellukseen voisi kehittää lisätoimintona mahdollisuuden mitata ruudukon täyttöön kuluva aika. Pelaajilla voisi olla mahdollisuus rekisteröityä, jolloin pelissä voisi ylläpitää listaa nopeimmista pelaajista. 
+  - Mikäli kaikki ruudut on täytetty oikein, sovellus tarkastaa onko ruudukko valmis. TEHTY
+  - Väärin täytettyjen ruutujen, sarakkaiden tai rivien koordinaatit ilmoitetaan pelaajalle tarkastus-nappulaa painettaessa TEHTY
+- Uuden ruudukon pohja haetaan tietokannasta TEHTY
+- Sovellus tallentaa pelaajan ruudukon täyttämiseen käytetyn ajan, ja tallentaa sen tietokantaan pelaajan tietojen kanssa.
 

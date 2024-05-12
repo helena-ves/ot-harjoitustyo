@@ -8,9 +8,9 @@ def rows(matrix: list):
     """
     for index, row in enumerate(matrix):
         for num in row:
-            if num > 0:
-                if row.count(num) > 1:
-                    return (False, index)
+            amount = row.count(num)
+            if amount > 1 and num != -1:
+                return (False, index)
     return (True, -1)
 
 def columns(matrix: list):
@@ -24,9 +24,9 @@ def columns(matrix: list):
     while column < 9:
         numbers = []
         for row in matrix:
-            if numbers.count(row[column]) > 0:
+            if numbers.count(int(row[column])) > 0:
                 return (False, column)
-            if row[column] > 0:
+            if int(row[column]) > 0:
                 numbers.append(row[column])
         column += 1
     return (True, -1)
@@ -57,3 +57,16 @@ def squares(matrix: list):
             if square.count(n) > 1 and n!= -1:
                 return (False, starting_points[index])
     return (True, -1)
+
+def all_filled(matrix: list):
+    """Checks if the sudoku is filled
+    Args:
+        matrix (list): the sudoku matrix filled by the user
+    Returns:
+        Boolean: returns true if all cells contain a number
+    """
+    for row in matrix:
+        for num in row:
+            if int(num) < 0:
+                return False
+    return True

@@ -1,4 +1,5 @@
 import unittest
+import string
 from services.sudoku_matrix import SudokuMatrix
 
 class testSudokuMatrix(unittest.TestCase):
@@ -33,13 +34,45 @@ class testSudokuMatrix(unittest.TestCase):
         for row in self.hard:
             self.assertEqual(helper_row_contains_same_numbers(row), False)
 
-    def test_if_insert_number_updates_the_matrix(self):
-        easy_updated = SudokuMatrix('easy').insert_number(5, (0, 0))
-        medium_updated = SudokuMatrix('medium').insert_number(5, (0, 0))
-        hard_updated = SudokuMatrix('hard').insert_number(5, (0, 0))
-        
+    def test_if_insert_number_updates_the_matrix_if_cell_is_empty(self):
+        easy = self.easy.get_row(0)[0]
+        medium = self.medium.get_row(0)[0]
+        hard = self.hard.get_row(0)[0]
 
+        easy_updated = self.easy.insert_number(5, (0, 0))
+        medium_updated = self.medium.insert_number(5, (0, 0))
+        hard_updated = self.hard.insert_number(5, (0, 0))
 
+        if easy == -1:
+            self.assertEqual(True, easy_updated)
+        else:
+            self.assertEqual(False, easy_updated)
+        if medium == -1:
+            self.assertEqual(True, medium_updated)
+        else:
+            self.assertEqual(False, medium_updated)
+        if hard == -1:
+            self.assertEqual(True, hard_updated)
+        else:
+            self.assertEqual(False, hard_updated)
+
+    def test_matrix_iteration(self):
+        for row in self.easy:
+            for num in row:
+                print(num)
+        for row in self.medium:
+            for num in row:
+                print(num)
+        for row in self.hard:
+            for num in row:
+                print(num)
+
+    def test_str(self):
+        easystr = self.easy.__str__()
+        mediumstr = self.medium.__str__()
+        hardstr = self.hard.__str__()
+        for char in easystr:
+            self.assertTrue(char in string.printable)  
 
 def helper_row_contains_same_numbers(row):
     sameNumbers = False
